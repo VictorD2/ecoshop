@@ -15,16 +15,12 @@ const Footer: React.FC = () => {
     <>
       <div style={{ background: "#232323" }}>
         <div className="container">
-          <footer className="footer py-4 py-md-5 py-lg-5 row">
+          <footer className="footer py-4 py-md-5 py-lg-5 row justify-content-around">
             {/* Primera Fila */}
             <div className="col-12 col-md-6 col-lg-4 my-4 my-md-2 my-lg-3 footer-section">
-              <div className="img-logo mx-auhref mb-4">
-                <a href="/" className="text-decoration-none">
-                  {/* <img className="img-fluid sombra-blanca" src={logo} alt="Logo Famir Centro" /> */}
-                </a>
-              </div>
+              <h6 className="footer-subtitle text-white fs-6 text-uppercase"> NOSOTROS </h6>
               <p className="footer-text text-white-50 mt-5 mt-md-4 mt-lg-3 lh-lg pe-0 pe-md-4 pe-lg-4" style={{ textAlign: "justify" }}>
-                FAMIR Centro se conforma por un equipo multidisciplinario que realiza capacitaciones y charlas con el objetivo de potenciar sus aprendizajes y entregar herramientas teóricas y prácticas relacionadas al ámbito educativo desde una mirada Psicológica y Psicopedagógica.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas hic vitae fugit eveniet quo non asperiores expedita optio eum quibusdam! Perferendis deleniti unde, accusantium quo dolorum maxime repudiandae beatae quisquam?
               </p>
               <ul className="footer-social-list d-flex">
                 <li className="footer-social-list-item mx-2 fs-3"></li>
@@ -59,52 +55,27 @@ const Footer: React.FC = () => {
               </ul>
             </div>
             {/* Tercera Fila */}
-            <div className="col-12 col-md-6 col-lg-3 my-4 my-md-2 my-lg-3 footer-section">
+            {/* <div className="col-12 col-md-6 col-lg-3 my-4 my-md-2 my-lg-3 footer-section">
               <h6 className="footer-subtitle text-white text-uppercase">Cursos</h6>
               <div className="row px-2">
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
-                <div className="col-4 col-sm-4 col-md-4 col-lg-4 my-3 my-md-2 my-lg-1">
-                  {/* <img className="img-fluid img-thumbnail" src={logo} alt="Logo Famir Centro" /> */}
-                </div>
               </div>
-            </div>
+            </div> */}
             {/* Cuarta Fila */}
             <div className="col-12 col-md-6 col-lg-3 my-4 my-lg-3 my-md-2 footer-section">
               <h6 className="footer-subtitle text-white text-uppercase">CONTACTO</h6>
               <div className="footer-contact">
                 <p className="text-white-50 my-5 d-flex justify-content-start align-items-center">
                   <IoLocationOutline color={"#7ed958"} className="mx-2 fs-4" />
-                  Santiago de Chile
-                  <br /> Trujillo, Perú
+                  Trujillo, Perú
                 </p>
               </div>
               <div className="footer-contact d-flex text-white-50 my-5">
                 <AiOutlinePhone color={"#7ed958"} className="mx-2 fs-4 my-auto" />
                 <div className="d-grid">
                   <p className="m-0">
-                    Chile:{" "}
-                    <a href="https://wa.me/56973952562" target="_BLANK" rel="noreferrer" className="text-decoration-none text-white-50">
-                      +56 973-952-562
-                    </a>
-                  </p>
-                  <p className="m-0">
                     Perú:{" "}
                     <a href="https://wa.me/51991981242" target="_BLANK" rel="noreferrer" className="text-decoration-none text-white-50">
-                      +51 991-981-242
+                      +51 990-978-736
                     </a>
                   </p>
                 </div>
@@ -113,7 +84,7 @@ const Footer: React.FC = () => {
                 <p className="text-white-50 d-flex justify-content-start align-items-center">
                   <CgMail color={"#7ed958"} className="mx-2 fs-4" />
                   <a href="mailto:centrofamir@gmail.com" className="text-white-50" target="_blank" rel="noopener noreferrer">
-                    centrofamir@gmail.com
+                    echoshop@gmail.com
                   </a>
                 </p>
               </div>

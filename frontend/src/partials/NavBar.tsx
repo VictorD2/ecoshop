@@ -47,9 +47,9 @@ const NavBar: React.FC = () => {
     <>
       <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light fondo_nav">
-          <div className="container-fluid">
+          <div className="container-fluid text-center">
             <Link className="navbar-brand" to="/">
-              <img src={logo} className="img-fluid w-50 ms-5" alt="Logo EcoShop" />
+              <img src={logo} className="img-fluid w-50 ms-lg-5" alt="Logo EcoShop" />
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon" />
@@ -58,7 +58,7 @@ const NavBar: React.FC = () => {
               <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <button className="btn btn_iniciar">
-                    <Link className="nav-link active text-uppercase" aria-current="page" to="/">
+                    <Link className="nav-link active text-uppercase" aria-current="page" to="/Iniciar">
                       Iniciar Sesión
                     </Link>
                   </button>
@@ -67,16 +67,6 @@ const NavBar: React.FC = () => {
             </div>
           </div>
         </nav>
-        <div className="lateral_menu">
-          <ul className="list-unstyled">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
       </header>
     </>
   );

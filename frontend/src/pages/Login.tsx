@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
-import axios from "axios";
-import { API } from "../config/config";
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+// import axios from "axios";
+// import { API } from "../config/config";
+import Logo from "../images/logo.png";
 
 //Imagenes
 // import logoLogin from "../images/Logo.svg";
@@ -9,92 +10,64 @@ import { API } from "../config/config";
 //Icons
 
 //Toastify
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
-import { useUsuario } from "../auth/UsuarioProvider";
-import auth from "../auth/auth";
+// import { useUsuario } from "../auth/UsuarioProvider";
+// import auth from "../auth/auth";
 
 const Login: React.FC = () => {
-  const initialState = {
-    email: "",
-    password: "",
-  };
-  const history = useHistory();
-  const { setUsuario } = useUsuario();
-  const [state, setState] = useState(initialState);
+  // const initialState = {
+  //   email: "",
+  //   password: "",
+  // };
+  // const history = useHistory();
+  // const { setUsuario } = useUsuario();
+  // const [state, setState] = useState(initialState);
 
   useEffect(() => {
     window.scrollTo({ top: 0 });
     return () => {};
   }, []);
 
-  //Set state
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setState({ ...state, [e.target.name]: e.target.value });
-  };
-
-  //On submit login
-  const handleForm = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const res = await axios.post(`${API}/signin`, state);
-    if (res.data.success) {
-      setUsuario(res.data.user);
-      auth.setRango(res.data.user.id_rango);
-      auth.sigIn();
-      return history.push("/");
-    }
-    if (res.data.error) return toast.error(res.data.error);
-  };
-
   return (
     <>
       <ToastContainer />
-      <div className="rgt__main">
-        <div className="card content__Login animate__animated animate__flipInY my-auto">
-          <Link to="/" className="card-header rgt__header">
-            {/* <img className="rgt__img" src={logoLogin} alt="logo-register" /> */}
-            <h5 className="rgt__title">FAMIR CENTRO</h5>
-          </Link>
-          <div className="card-body px-4">
-            <div className="row">
-              <div className="col-12">
-                <form onSubmit={handleForm}>
-                  <div className="form-floating mb-3">
-                    <input onChange={handleInputChange} type="email" name="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label htmlFor="floatingInput">Correo</label>
-                  </div>
-                  <div className="form-floating mb-3">
-                    <input onChange={handleInputChange} type="password" name="password" className="form-control" id="floatingPassword" placeholder="Password" />
-                    <label htmlFor="floatingPassword">Contraseña</label>
-                  </div>
-                  <div className="rgt__button">
-                    <button type="submit" className="btn btn__more" style={{ padding: "0.7rem 2rem" }}>
-                      Inicia sesión
-                    </button>
-                  </div>
-                </form>
-              </div>
-              <div className="row">
-                <div className="col-12 d-flex justify-content-center">
-                  <span className="line__login">
-                    <span>O</span>
-                  </span>
-                </div>
-              </div>
-            </div>
+      <div className="content-main">
+        <div className="container px-5">
+          <div className="d-flex justify-content-center my-5">
+            <Link to="/">
+              <img src={Logo} alt="logo-register" className="mx-auto my-auto logo-register" />
+            </Link>
           </div>
-          <div className="card-footer text-muted">
-            <div className="row">
-              <div className="col-12 d-flex justify-content-center mb-3">
-                <span style={{ color: "#000000" }}>¿Aún no tienes cuenta en FAMIR CENTRO?</span>
+          <form className="mx-auto mb-3">
+            <div className="row align-items-center flex-column mb-lg-5 mb-md-4 mb-4">
+              <div className="col-md-6 mb-4">
+                <input type="email" className="input-register" name="email" placeholder="Correo electronico" />
+              </div>
+              <div className="col-md-6 mb-3">
+                <input type="password" className="input-register" name="password" placeholder="Contraseña" />
+              </div>
+              <div className="col-md-6">
+                <p className="text-end">
+                  <Link className="password__olvidada" to="/">
+                    ¿Olvidaste tu contraseña?
+                  </Link>
+                </p>
               </div>
             </div>
-            <div className="col-12 d-flex justify-content-center mb-3">
-              <Link to="/Registrarse" className="btn btn-outline-success w-75">
-                Regístrate
+            <div className="d-grid col-lg-6 col-md-8 mx-auto mb-lg-0 mb-md-0 mb-3" style={{ marginTop: "4rem" }}>
+              <button className="btn btn_register mx-auto" type="button">
+                Iniciar Sesión
+              </button>
+            </div>
+            <div className="d-grid col-lg-6 col-md-8 mx-auto mb-lg-0 mb-md-0 mb-5" style={{ marginTop: "2rem" }}>
+              <Link to="/Registrarse" className="text-center">
+                <button className="btn btn_register mx-auto" type="button">
+                  Registrate
+                </button>
               </Link>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </>
