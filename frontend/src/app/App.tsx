@@ -7,6 +7,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 import DashBoard from "../pages/Dashboard/DashBoard";
+import ManejoProductos from "../pages/Dashboard/ManejoProductos";
+import Marketing from "../pages/Dashboard/Marketing";
 import Carrito from "../pages/Carrito/Carrito";
 
 // Layout
@@ -25,8 +27,9 @@ const App = () => {
         <Route exact component={Register} path="/Registrarse" />
         <LayoutUsuario exact path="/Carrito" component={Carrito} />
         {/* Dashboard */}
-        <LayoutDash exact path="/DashBoard" component={DashBoard} />
-
+        <LayoutDash exact path="/DashBoard" component={DashBoard}  />
+        <LayoutDash exact path="/DashBoard/ManejoProductos" component={ManejoProductos} />
+        <LayoutDash exact path="/DashBoard/Marketing" component={Marketing} />
         <Route component={NotFound} />
       </Switch>
     </BrowserRouter>
