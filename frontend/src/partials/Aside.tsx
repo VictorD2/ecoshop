@@ -5,6 +5,9 @@ import axios from "axios";
 import { API } from "../config/config";
 import { useUsuario } from "../auth/UsuarioProvider";
 import { Usuario } from "../interfaces/Usuario";
+import { MdOutlineFastfood } from 'react-icons/md';
+import { IoMdGlasses } from 'react-icons/io';
+import { GiRunningShoe, GiNoodles, GiMedicinePills, GiNecklaceDisplay } from 'react-icons/gi';
 import auth from "../auth/auth";
 const initialState: Usuario = {
   id_usuario: "",
@@ -23,7 +26,7 @@ const initialState: Usuario = {
   url_foto_nacimiento: "",
   authenticate: false,
 };
-const Aside:React.FC = () => {
+const Aside: React.FC = () => {
   const history = useHistory();
   const { usuario, setUsuario } = useUsuario();
   const ref1 = useRef<HTMLLIElement | null>();
@@ -56,14 +59,14 @@ const Aside:React.FC = () => {
   };
 
   return (
-    <aside className="main-sidebar position-fixed sidebar-dark-primary elevation-4 h-100" style={{ background: "var(--azul-oscuro" }}>
+    <aside className="main-sidebar position-fixed sidebar-dark-primary bg-dark elevation-4 h-100" style={{ background: "var(--azul-oscuro" }}>
       {/* Brand Logo */}
       <Link to="#" className="nav-link text-white d-lg-none d-block" data-widget="pushmenu" role="button">
         <i className="fas fa-bars" />
       </Link>
       <Link to="/" className="brand-link">
         {/* <img src={logo} alt="Famir Centro Logo" className="brand-image elevation-3" style={{ opacity: ".8" }} /> */}
-        <span className="brand-text font-weight-light">Famir Centro</span>
+        <span className="brand-text font-weight-light ms-3">Menu</span>
       </Link>
       {/* Sidebar */}
       <div className="sidebar os-host os-theme-light os-host-overflow os-host-overflow-y os-host-resize-disabled os-host-scrollbar-vertical-hidden os-host-scrollbar-horizontal-hidden os-host-transition">
@@ -79,8 +82,11 @@ const Aside:React.FC = () => {
             <div className="os-content" style={{ padding: "0px 8px", height: "100%", width: "100%" }}>
               {/* Sidebar user panel (optional) */}
               <div className="user-panel mt-3 pb-3 mb-3 d-flex">
-                <div className="image">
-                  <img src={usuario.url_foto_usuario} alt="Foto de Perfil" className="img-circle elevation-1" />
+                <div className="user-container d-flex">
+                  <div className="user-icon my-2 text-center">
+                    <i className="fas fa-user" />
+                  </div>
+                  <h5 className="my-2">Administrador</h5>
                 </div>
                 <div className="info">
                   <Link to="/Perfil" className="d-block">
@@ -91,40 +97,70 @@ const Aside:React.FC = () => {
               {/* Sidebar Menu */}
               <nav className="mt-2">
                 <ul className="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
-                  <li className="nav-item">
+                  <li className="nav-item my-2">
                     <Link to="/DashBoard/Usuarios" className="nav-link">
-                      <i className="nav-icon fas fa-user " />
-                      <p>Usuarios</p>
+                      <i className="nav-icon fas fa-home " />
+                      <p>Inicio</p>
                     </Link>
                   </li>
-                  <li className="nav-item">
-                    <Link to="/DashBoard/Profesores" className="nav-link">
-                      <i className="nav-icon fas fa-book-reader" />
-                      <p>Profesores</p>
-                    </Link>
-                  </li>
-                  <li onClick={abrir1} ref={(node) => (ref1.current = node)} className="nav-item">
+                  <li onClick={abrir1} ref={(node) => (ref1.current = node)} className="nav-item my-2">
                     <Link to="#" className="nav-link">
-                      <i className="nav-icon fas fa-book" />
+                      <i className="nav-icon fas fa-weight-hanging" />
                       <p>
-                        Cursos
+                        Productos
                         <i className="right fas fa-angle-left" />
                       </p>
                     </Link>
                     <ul ref={(node) => (ref3.current = node)} className="nav nav-treeview d-none">
-                      <li className="nav-item">
+                      <li className="nav-item ">
                         <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
-                          <i className="fas fa-book nav-icon" />
-                          <p>Cursos Sincrónicos</p>
+                          <MdOutlineFastfood className="icon-dash" />
+                          <p>Descartables</p>
                         </Link>
                       </li>
+                      <li className="nav-item">
+                        <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
+                          <IoMdGlasses className="icon-dash" />
+                          <p>Moda</p>
+                        </Link>
+                      </li>
+                      <li className="nav-item">
+                        <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
+                          <GiRunningShoe className="icon-dash" />
+                          <p>Calzado</p>
+                        </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
+                            <GiNoodles className="icon-dash" />
+                            <p>Alimentos</p>
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
+                            <GiMedicinePills className="icon-dash" />
+                            <p>Salud y bienestar</p>
+                          </Link>
+                        </li>
+                        <li className="nav-item">
+                          <Link to="/DashBoard/Cursos/Sincronicos" className="nav-link">
+                            <GiNecklaceDisplay className="icon-dash" />
+                            <p>Joyería</p>
+                          </Link>
+                        </li>
                     </ul>
                   </li>
+                  <li className="nav-item my-2">
+                    <Link to="/DashBoard/Profesores" className="nav-link">
+                      <i className="nav-icon fas fa-bullhorn" />
+                      <p>Marketing</p>
+                    </Link>
+                  </li>
                   <li onClick={abrir2} ref={(node) => (ref2.current = node)} className="nav-item">
-                    <Link to="#" className="nav-link">
-                      <i className="nav-icon fas fa-book" />
+                    <Link to="#" className="nav-link my-2">
+                      <i className="nav-icon fas fa-chart-bar" />
                       <p>
-                        Talleres
+                        Estadisticas
                         <i className="right fas fa-angle-left" />
                       </p>
                     </Link>
@@ -132,31 +168,18 @@ const Aside:React.FC = () => {
                       <li className="nav-item">
                         <Link to="/DashBoard/Talleres/Sincronicos" className="nav-link">
                           <i className="fas fa-book nav-icon" />
-                          <p>Talleres Sincrónicos</p>
+                          <p>Ranking de Empresas</p>
                         </Link>
                       </li>
                       <li className="nav-item">
                         <Link to="/DashBoard/Talleres/Asincronicos" className="nav-link">
                           <i className="fas fa-book nav-icon" />
-                          <p>Talleres Asincrónicos</p>
+                          <p>Ventas Mensuales</p>
                         </Link>
                       </li>
                     </ul>
                   </li>
-
-                  <li className="nav-item">
-                    <Link to="/DashBoard/Comprobantes" className="nav-link">
-                      <i className="nav-icon fas fa-file " />
-                      <p>Comprobantes</p>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link to="/DashBoard/Contacto" className="nav-link">
-                      <i className="nav-icon fas fa-envelope" />
-                      <p>Mensaje de Contacto</p>
-                    </Link>
-                  </li>
-                  <li className="nav-item justify-self-end align-self-auto">
+                  <li className="nav-item my-2 justify-self-end align-self-auto">
                     <Link onClick={() => logOut()} to="#" className="nav-link">
                       <i className="nav-icon fas fa-door-open" />
                       <p>Cerrar Sesión</p>
@@ -179,9 +202,9 @@ const Aside:React.FC = () => {
           </div>
         </div>
         <div className="os-scrollbar-corner" />
-      </div>
-      {/* /.sidebar */}
-    </aside>
+      </div >
+  {/* /.sidebar */ }
+    </aside >
   );
 };
 

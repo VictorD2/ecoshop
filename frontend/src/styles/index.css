@@ -1,5 +1,5 @@
 :root {
-  --morado_calaro_categoria: #9192ba;
+  --morado_claro_categoria: #9192ba;
   --morado_categoria: #b36cac;
   --rojo_categoria: #b36c81;
   --verde_claro_categoria: #adb36c;
@@ -361,4 +361,146 @@ code {
 .fondo_nav {
   background: rgb(254,255,254);
 background: linear-gradient(180deg, rgba(254,255,254,1) 0%, rgba(204,249,223,1) 100%);
+}
+.main-container__carrito{
+  flex-wrap: wrap;
+  
+}
+.carrito-menu{
+  margin-top: 40px;
+}
+.container-carrito{
+  padding: 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.carrito-producto{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  padding: 5px 0;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.carrito-producto__datos{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 0 45px;
+}
+.carrito-producto__imagen{
+  height: 200px;
+  width: 220px;
+}
+.carrito-producto__imagen img{
+  height: 200px;
+}
+.lista-productos{
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+  padding: 10px 5px 10px 20px;
+  width: 65%;
+}
+.lista-productos h2{
+  color: var(--verde_oscuro);
+}
+.lista-productos__pagar{
+  height: 600px;
+	background: #faf9f9;
+  overflow-y: scroll;
+}
+.lista-productos__total{
+  width: 25%;
+}
+.btn-pagar{
+  background-color: var(--verde_oscuro);
+  margin: 60px 0;
+  padding: 10px 20px;
+  width: 100%;
+}
+.input-cantidad{
+  background-color: var(--verde_claro);
+  height: 30px;
+  border: transparent;
+  border-radius: 20px;
+}
+.menu-list ul{
+  list-style-type: none;
+}
+.menu-list .box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 15px 0;
+  padding: 6px 10px;
+  border-radius: 22px;
+  box-shadow: 6px 6px 6px #999;
+}
+.box1{
+  background-color: var(--morado_claro_categoria);
+}
+
+.box2{
+  background-color: var(--morado_categoria);
+}
+
+.box3{
+  background-color: var(--rojo_categoria);
+}
+
+.box4{
+  background-color: var(--verde_claro_categoria);
+}
+
+.box5{
+  background-color: var(--celeste_categoria);
+}
+
+.box6{
+  background-color: var(--verde_categoria);
+}
+
+.menu-list .box a{
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  
+}
+
+.menu-list .icon{
+  font-size: 28px;
+}
+
+.btn_iniciar {
+  background: linear-gradient(to left, var(--verde_oscuro), var(--verde_claro));
+  border-radius: 12px;
+  
+}
+
+/*Estilos del DashBoard*/
+
+.user-container{
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.user-icon{
+  font-size: 80px;
+  width: 150px;
+  height: 150px;
+  
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-image: radial-gradient(circle at 50% -20.71%, #ffffa1 0, #f5ffa0 6.25%, #e4ffa0 12.5%, #d2ffa1 18.75%, #bdffa3 25%, #a7fda6 31.25%, #8cfaaa 37.5%, #6cf7af 43.75%, #3cf2b5 50%, #00edbc 56.25%, #00e8c6 62.5%, #00e4d0 68.75%, #00dfdc 75%, #00dbe9 81.25%, #00d7f5 87.5%, #00d3ff 93.75%, #00d0ff 100%);
+}
+.icon-dash{
+  font-size: 20px;
+  margin: 0 6px;
+}
+
+.fondo_nav{
+  background: linear-gradient(to top, var(--verde_oscuro_nav), var(--verde_claro));
+
 }
