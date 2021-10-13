@@ -7,7 +7,7 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 import DashBoard from "../pages/Dashboard/DashBoard";
-import Carrito from '../pages/Carrito/Carrito';
+import Carrito from "../pages/Carrito/Carrito";
 
 // Layout
 import LayoutDash from "../partials/LayoutDash";
@@ -22,8 +22,8 @@ const App = () => {
         <LayoutUsuario exact path="/" component={Home} />
         <LayoutUsuario exact path="/Carrito" component={Carrito} />
         <Route exact component={Login} path="/Iniciar" />
-        <Route exact component={Register} path="/Register" />
-
+        <Route exact component={Register} path="/Registrarse" />
+        <LayoutUsuario exact path="/Carrito" component={Carrito} />
         {/* Dashboard */}
         <LayoutDash exact path="/DashBoard" component={DashBoard} />
 
