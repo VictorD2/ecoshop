@@ -1,7 +1,7 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
-import Axios from "axios";
-import { API } from "../config/config";
+import { Link } from "react-router-dom";
+/* import Axios from "axios";
+import { API } from "../config/config"; */
 
 //Imagenes
 import logo from "../images/logo.png";
@@ -9,7 +9,7 @@ import logo from "../images/logo.png";
 
 //Iconos
 
-import { Usuario } from "../interfaces/Usuario";
+/*import { Usuario } from "../interfaces/Usuario";
 import { useUsuario } from "../auth/UsuarioProvider";
 import auth from "../auth/auth";
 
@@ -27,13 +27,13 @@ const initialState: Usuario = {
   id_rango: 2,
   url_foto_usuario: "",
   authenticate: false,
-};
+}; */
 const NavBar: React.FC = () => {
-  const { usuario, loadUser, setUsuario } = useUsuario();
-  const history = useHistory();
+  /* const { usuario, loadUser, setUsuario } = useUsuario(); */
+  /* const history = useHistory(); */
 
   //Desconectar
-  const logout = async () => {
+  /* const logout = async () => {
     const res = await Axios.get(`${API}/logout`, { withCredentials: true });
     if (res.data.success) {
       setUsuario(initialState);
@@ -41,7 +41,7 @@ const NavBar: React.FC = () => {
       auth.logOut();
       return history.push("/"); //<- Te regresa a la pagina principal
     }
-  };
+  }; */
 
   return (
     <>

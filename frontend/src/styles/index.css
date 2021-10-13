@@ -570,6 +570,17 @@ input[type="checkbox"]:hover {
   box-shadow: 5px 10px #888888;
 }
 
+.fondo_nav{
+  background: linear-gradient(to top, var(--verde_oscuro_nav), var(--verde_claro));
+
+}
+
+.section_cards-dash {
+  display: grid;
+  grid-template: 1fr/repeat(3, 1fr);
+  gap: 2rem;
+}
+
 @media only screen and (max-width: 768px) {
   .btn_register {
     width: 12rem;
@@ -580,9 +591,8 @@ input[type="checkbox"]:hover {
     width: 14.5rem;
     height: 5rem;
   }
-}
 
-.fondo_nav{
-  background: linear-gradient(to top, var(--verde_oscuro_nav), var(--verde_claro));
-
+  .section_cards-dash {
+    grid-template: auto/auto;
+  }
 }
