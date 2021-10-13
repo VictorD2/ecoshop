@@ -8,27 +8,27 @@ const Menu = () => {
             <ul>
                 <li className="box1 box">
                     <MdOutlineFastfood className="icon" />
-                    <a href="#">Descartables</a>
+                    <a href="/#">Descartables</a>
                 </li>
                 <li className="box2 box">
                     <IoMdGlasses className="icon" />
-                    <a href="#">Moda</a>
+                    <a href="/#">Moda</a>
                 </li>
                 <li className="box3 box">
                     <GiRunningShoe className="icon" />
-                    <a href="#">Calzado</a>
+                    <a href="/#">Calzado</a>
                 </li>
                 <li className="box4 box">
                     <GiNoodles className="icon" />
-                    <a href="#">Alimentos</a>
+                    <a href="/#">Alimentos</a>
                 </li>
                 <li className="box5 box text-center">
                     <GiMedicinePills className="icon" />
-                    <a href="#">Salud y Bienestar</a>
+                    <a href="/#">Salud y Bienestar</a>
                 </li>
                 <li className="box6 box">
                     <GiNecklaceDisplay className="icon" />
-                    <a href="#">Joyerìa</a>
+                    <a href="/#">Joyerìa</a>
                 </li>
             </ul>
         </nav>

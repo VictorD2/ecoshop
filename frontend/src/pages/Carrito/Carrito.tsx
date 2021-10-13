@@ -1,16 +1,9 @@
-import React, { RefForwardingComponent } from "react";
-import { Route } from "react-router-dom";
-import { nodeModuleNameResolver } from "typescript";
+import React from "react";
 import CarritoProducto from "../../partials/CarritoProducto";
 import Menu from "../../partials/Menu";
 import libreta from '../../images/journal-wood.jpg';
 import camisa from '../../images/veraluna.jpg';
 import pulseras from '../../images/recycled-bracelets.jpg';
-
-
-interface Props {
-
-}
 
 const Carrito = () => {
 

@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from '../pages/Carrito/Carrito';
 
 interface CarritoProps {
     nombreProducto: string;

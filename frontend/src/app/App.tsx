@@ -20,12 +20,12 @@ const App = () => {
       <Switch>
         {/* Vistas */}
         <LayoutUsuario exact path="/" component={Home} />
+        <LayoutUsuario exact path="/Carrito" component={Carrito} />
         <Route exact component={Login} path="/Iniciar" />
         <Route exact component={Register} path="/Registrarse" />
         <LayoutUsuario exact path="/Carrito" component={Carrito} />
         {/* Dashboard */}
         <LayoutDash exact path="/DashBoard" component={DashBoard} />
-
 
         <Route component={NotFound} />
       </Switch>
