@@ -95,7 +95,7 @@ const Aside: React.FC = () => {
                     </Link>
                   </li>
                   <li onClick={abrir1} ref={(node) => (ref1.current = node)} className="nav-item my-2">
-                    <Link to="#" className="nav-link">
+                    <Link to="/Dashboard/ManejoProductos" className="nav-link">
                       <i className="nav-icon fas fa-weight-hanging" />
                       <p>
                         Productos
@@ -142,7 +142,7 @@ const Aside: React.FC = () => {
                     </ul>
                   </li>
                   <li className="nav-item my-2">
-                    <Link to="#" className="nav-link">
+                    <Link to="/Dashboard/Marketing" className="nav-link">
                       <i className="nav-icon fas fa-bullhorn" />
                       <p>Marketing</p>
                     </Link>

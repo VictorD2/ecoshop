@@ -7,8 +7,8 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
 import DashBoard from "../pages/Dashboard/DashBoard";
-import ManejoProductos from "../pages/Dashboard/ManejoProductos";
-import Marketing from "../pages/Dashboard/Marketing";
+import ManejoProductos from "../pages/Dashboard/Productos/ManejoProductos";
+import Marketing from "../pages/Dashboard/Marketing/Marketing";
 import Carrito from "../pages/Carrito/Carrito";
 
 // Layout
