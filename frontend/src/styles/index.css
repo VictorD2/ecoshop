@@ -725,7 +725,16 @@ input[type="checkbox"]:hover {
 
 .container-buscador__productos{
   margin-top: 50px;
-  padding-right: 180px;
+}
+.container-pagination .page-link{
+  color: #000000;
+  background-color: var(--verde_categoria);
+}
+.actions-icon{
+  color: #000000;
+}
+.actions-icon:hover{
+  color: var(--verde_oscuro);
 }
 
 @media only screen and (max-width: 1198px) {

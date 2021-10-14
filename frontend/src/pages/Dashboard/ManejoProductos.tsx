@@ -3,8 +3,9 @@ import { BsSearch, BsPlusCircle } from "react-icons/bs";
 import Buscador from '../../components/Buscador';
 
 import { AiFillEye } from "react-icons/ai";
-import { FiEdit } from "react-icons/fi";
+import { RiEditBoxFill } from "react-icons/ri";
 import { FaTrash } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const ManejoProductos: React.FC = () => {
     return (
@@ -16,12 +17,10 @@ const ManejoProductos: React.FC = () => {
                     <span className="ms-2">Agregar Producto</span>
                 </button>
             </div>
-            <div className="container-buscador__productos w-100 d-flex justify-content-end">
+            <div className="container-md container-buscador__productos w-100 d-flex justify-content-end">
                 <Buscador />
             </div>
             <div className="container-md my-5 position-relative text-center">
-
-
                 <table className="table table-striped">
                     <thead>
                         <tr>
@@ -41,12 +40,18 @@ const ManejoProductos: React.FC = () => {
                             <td>small</td>
                             <td>12.50</td>
                             <td>Si</td>
-                            <td>Moda</td>
+                            <td className="">Moda</td>
                             <td>
-                                <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                <div className="fs-4 d-flex justify-content-center">
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -59,9 +64,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -74,9 +85,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -89,9 +106,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -104,9 +127,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -119,9 +148,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -134,9 +169,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -149,9 +190,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -164,9 +211,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -179,9 +232,15 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
@@ -194,14 +253,39 @@ const ManejoProductos: React.FC = () => {
                             <td>Moda</td>
                             <td>
                                 <div className="col fs-4 d-flex justify-content-center">
-                                    <AiFillEye className="mx-1" />
-                                    <FiEdit className="mx-1" />
-                                    <FaTrash className="mx-1" />
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <AiFillEye className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <RiEditBoxFill className="mx-1" />
+                                    </Link>
+                                    <Link className="actions-icon" to="#" type="button">
+                                        <FaTrash className="mx-1" />
+                                    </Link>
                                 </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
+                <div className="container-pagination d-flex justify-content-end pe-2 my-4">
+                    <nav aria-label="Page navigation">
+                        <ul className="pagination">
+                            <li className="page-item">
+                                <a className="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span>
+                                </a>
+                            </li>
+                            <li className="page-item"><a className="page-link" href="#">1</a></li>
+                            <li className="page-item"><a className="page-link" href="#">2</a></li>
+                            <li className="page-item"><a className="page-link" href="#">3</a></li>
+                            <li className="page-item">
+                                <a className="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </>
     )
