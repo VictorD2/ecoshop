@@ -13,14 +13,14 @@ const ManejoProductos: React.FC = () => {
             <div className="container-fluid">
               <div className="card mt-4">
                 <div className="card-header">
-                  <h3 className="card-title text-uppercase fs-3">
+                  <h3 className="card-title text-uppercase fs-3 mt-lg-0  mt-md-0 mt-2">
                     <i className="fs-4 me-2 fas fa-weight-hanging" />
                     Productos
                   </h3>
                   <div className="card-tools">
                     <button typeof="button" className="btn btn-success fs-5">
-                      <BsPlusCircle />
-                      <span className="ms-2">Agregar Producto</span>
+                      <BsPlusCircle className="mb-lg-0 mb-1"/>
+                      <span className="ms-2 d-lg-inline-block d-none">Agregar Producto</span>
                     </button>
                   </div>
                 </div>
