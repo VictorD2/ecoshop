@@ -6,6 +6,7 @@ interface PrivateRouteProps {
   component: any;
   exact: boolean;
   path: string;
+  
 }
 const DashboardLayout: React.FC = ({ children, ...rest }) => {
   return (
