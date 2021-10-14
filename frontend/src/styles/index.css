@@ -608,7 +608,7 @@ input[type="checkbox"]:hover {
 }
 .social_media_button {
   left: 70px;
-  bottom: 40px;
+  bottom: 10px;
   width: 50px;
   border-radius: 50%;
 }
@@ -618,6 +618,7 @@ input[type="checkbox"]:hover {
   width: 70px;
   border-radius: 50%;
   background: linear-gradient(to left, var(--verde_oscuro), var(--verde_claro));
+  box-shadow: 12px 12px 40px #000 ;
 }
 .carrito_button a {
   font-size: 50px;
